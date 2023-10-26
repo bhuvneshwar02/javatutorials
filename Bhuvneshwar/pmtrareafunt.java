@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class pmtrareafunt {
+    static int parameter(int l,int b) {
+		int p=2*(l+b);
+		return p;
+	}
+	static int area(int l,int b) {
+		int a=l*b;
+		return a;
+	}
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the length of rectangle");
+		int length=obj.nextInt();
+		System.out.println("Enter the width of rectangle");
+		int width=obj.nextInt();
+		int res=parameter(length,width);
+		System.out.println("Parameter of rectangle"+res);
+		int ar=area(length,width);
+		System.out.println("Area of rectangle"+ar);
+		obj.close();
+    }
+}
